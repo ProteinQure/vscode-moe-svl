@@ -1,7 +1,9 @@
 {
     "name": "pq-moe-svl",
+    "publisher": "ProteinQure",
     "displayName": "PQ MOE SVL",
     "description": "Syntax highlighting for MOE SVL provided by ProteinQure.",
+    "repository": {"type": "git", "url": "https://github.com/ProteinQure/vscode-moe-svl"},
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.57.0"
