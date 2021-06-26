@@ -1,0 +1,25 @@
+{
+    "name": "pq-moe-svl",
+    "displayName": "PQ MOE SVL",
+    "description": "Syntax highlighting for MOE SVL provided by ProteinQure.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "svl",
+            "aliases": ["Scientific Vector Language", "svl"],
+            "extensions": [".svl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "svl",
+            "scopeName": "source.svl",
+            "path": "./syntaxes/svl.tmLanguage.json"
+        }]
+    }
+}
