@@ -29,7 +29,7 @@
 					"match": "\\b(break|continue|else|elseif|for|goto|in|return|then|until|while|function|endfunction|if|endif|loop|endloop)\\b"
 				},
 				{
-					"name": "keyword.operator.svl",
+					"name": "keyword.operator.new.svl",
 					"match": "\\b(and|or)\\b"
 				},
 				{
