@@ -88,7 +88,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.integer.svl",
-					"match": "\\b(?<!\\.)(-?[\\d_]+)(?!\\.)\\b"
+					"match": "\\b(?<!\\.)((0x)[0-9A-F]+\\b|(0o)[0-7]+\\b|(0y)[01]+\\b|(-?[\\d_]+))(?!\\.)\\b"
 				},
 				{
 					"name": "constant.numeric.float.svl",
