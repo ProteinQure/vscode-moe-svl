@@ -70,6 +70,17 @@
 					"name": "comment.line.double-slash.svl",
 					"begin": "\\/\\/",
 					"end": "$"
+				},
+				{
+					"name": "comment.block.svl",
+					"begin": "\\/\\*",
+					"end": "\\*\\/",
+					"beginCaptures": {
+						"0": {"name": "comment.block.open.svl"}
+					},
+					"endCaptures": {
+						"0": {"name": "comment.block.close.svl"}
+					}
 				}
 			]
 		},
