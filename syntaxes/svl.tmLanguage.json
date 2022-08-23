@@ -29,7 +29,7 @@
 					"match": "\\b(break|continue|else|elseif|for|goto|in|return|then|until|while|function|endfunction|if|endif|loop|endloop)\\b"
 				},
 				{
-					"name": "keyword.operator.svl",
+					"name": "keyword.operator.new.svl",
 					"match": "\\b(and|or)\\b"
 				},
 				{
@@ -70,6 +70,17 @@
 					"name": "comment.line.double-slash.svl",
 					"begin": "\\/\\/",
 					"end": "$"
+				},
+				{
+					"name": "comment.block.svl",
+					"begin": "\\/\\*",
+					"end": "\\*\\/",
+					"beginCaptures": {
+						"0": {"name": "comment.block.open.svl"}
+					},
+					"endCaptures": {
+						"0": {"name": "comment.block.close.svl"}
+					}
 				}
 			]
 		},
@@ -77,7 +88,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.integer.svl",
-					"match": "\\b(?<!\\.)(-?[\\d_]+)(?!\\.)\\b"
+					"match": "\\b(?<!\\.)((0x)[0-9A-F]+\\b|(0o)[0-7]+\\b|(0y)[01]+\\b|(-?[\\d_]+))(?!\\.)\\b"
 				},
 				{
 					"name": "constant.numeric.float.svl",
